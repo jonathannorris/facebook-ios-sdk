@@ -34,8 +34,8 @@
 - (id)init {
     self = [super init];
     if (self) {
-        jsonWriter = [SBJsonWriter new];
-        jsonParser = [SBJsonParser new];
+        jsonWriter = [FBSBJsonWriter new];
+        jsonParser = [FBSBJsonParser new];
         [self setMaxDepth:512];
 
     }

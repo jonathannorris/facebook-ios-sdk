@@ -28,12 +28,12 @@
  */
 
 #import "NSObject+SBJSON.h"
-#import "SBJsonWriter.h"
+#import "FBSBJsonWriter.h"
 
 @implementation NSObject (NSObject_SBJSON)
 
 - (NSString *)JSONFragment {
-    SBJsonWriter *jsonWriter = [SBJsonWriter new];
+    FBSBJsonWriter *jsonWriter = [FBSBJsonWriter new];
     NSString *json = [jsonWriter stringWithFragment:self];    
     if (!json)
         NSLog(@"-JSONFragment failed. Error trace is: %@", [jsonWriter errorTrace]);
@@ -42,7 +42,7 @@
 }
 
 - (NSString *)JSONRepresentation {
-    SBJsonWriter *jsonWriter = [SBJsonWriter new];    
+    FBSBJsonWriter *jsonWriter = [FBSBJsonWriter new];    
     NSString *json = [jsonWriter stringWithObject:self];
     if (!json)
         NSLog(@"-JSONRepresentation failed. Error trace is: %@", [jsonWriter errorTrace]);
