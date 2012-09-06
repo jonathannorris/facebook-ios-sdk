@@ -28,8 +28,8 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "SBJsonParser.h"
-#import "SBJsonWriter.h"
+#import "FBSBJsonParser.h"
+#import "FBSBJsonWriter.h"
 
 /**
  @brief Facade for SBJsonWriter/SBJsonParser.
@@ -39,8 +39,8 @@
 @interface SBJSON : SBJsonBase <SBJsonParser, SBJsonWriter> {
 
 @private    
-    SBJsonParser *jsonParser;
-    SBJsonWriter *jsonWriter;
+    FBSBJsonParser *jsonParser;
+    FBSBJsonWriter *jsonWriter;
 }
 
 

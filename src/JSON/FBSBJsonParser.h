@@ -71,7 +71,7 @@
  as we can thus avoid any loss of precision. (JSON allows ridiculously large numbers.)
  
  */
-@interface SBJsonParser : SBJsonBase <SBJsonParser> {
+@interface FBSBJsonParser : SBJsonBase <SBJsonParser> {
     
 @private
     const char *c;
@@ -80,7 +80,7 @@
 @end
 
 // don't use - exists for backwards compatibility with 2.1.x only. Will be removed in 2.3.
-@interface SBJsonParser (Private)
+@interface FBSBJsonParser (Private)
 - (id)fragmentWithString:(id)repr;
 @end
 

@@ -91,7 +91,7 @@
  way you would expect.
  
  */
-@interface SBJsonWriter : SBJsonBase <SBJsonWriter> {
+@interface FBSBJsonWriter : SBJsonBase <SBJsonWriter> {
 
 @private
     BOOL sortKeys, humanReadable;
@@ -100,7 +100,7 @@
 @end
 
 // don't use - exists for backwards compatibility. Will be removed in 2.3.
-@interface SBJsonWriter (Private)
+@interface FBSBJsonWriter (Private)
 - (NSString*)stringWithFragment:(id)value;
 @end
 
