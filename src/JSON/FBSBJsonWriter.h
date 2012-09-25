@@ -28,14 +28,14 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "SBJsonBase.h"
+#import "FBSBJsonBase.h"
 
 /**
  @brief Options for the writer class.
  
  This exists so the SBJSON facade can implement the options in the writer without having to re-declare them.
  */
-@protocol SBJsonWriter
+@protocol FBSBJsonWriter
 
 /**
  @brief Whether we are generating human-readable (multiline) JSON.
@@ -91,7 +91,7 @@
  way you would expect.
  
  */
-@interface FBSBJsonWriter : SBJsonBase <SBJsonWriter> {
+@interface FBSBJsonWriter : FBSBJsonBase <FBSBJsonWriter> {
 
 @private
     BOOL sortKeys, humanReadable;

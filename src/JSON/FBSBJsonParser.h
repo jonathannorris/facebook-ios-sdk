@@ -28,14 +28,14 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "SBJsonBase.h"
+#import "FBSBJsonBase.h"
 
 /**
   @brief Options for the parser class.
  
  This exists so the SBJSON facade can implement the options in the parser without having to re-declare them.
  */
-@protocol SBJsonParser
+@protocol FBSBJsonParser
 
 /**
  @brief Return the object represented by the given string.
@@ -71,7 +71,7 @@
  as we can thus avoid any loss of precision. (JSON allows ridiculously large numbers.)
  
  */
-@interface FBSBJsonParser : SBJsonBase <SBJsonParser> {
+@interface FBSBJsonParser : FBSBJsonBase <FBSBJsonParser> {
     
 @private
     const char *c;

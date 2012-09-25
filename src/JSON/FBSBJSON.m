@@ -27,9 +27,9 @@
  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import "SBJSON.h"
+#import "FBSBJSON.h"
 
-@implementation SBJSON
+@implementation FBSBJSON
 
 - (id)init {
     self = [super init];
