@@ -317,9 +317,9 @@
 				GCC_PREFIX_HEADER = "SessionLoginSample/SessionLoginSample-Prefix.pch";
 				INFOPLIST_FILE = "SessionLoginSample/SessionLoginSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../build/Release-universal\"",
+				OTHER_LDFLAGS = (
+				    "-lsqlite3.0",
+				    "-ObjC",
 				);
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = SessionLoginSample;
@@ -338,9 +338,9 @@
 				GCC_PREFIX_HEADER = "SessionLoginSample/SessionLoginSample-Prefix.pch";
 				INFOPLIST_FILE = "SessionLoginSample/SessionLoginSample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../build/Release-universal\"",
+				OTHER_LDFLAGS = (
+				    "-lsqlite3.0",
+				    "-ObjC",
 				);
 				OTHER_LDFLAGS = "-lsqlite3.0";
 				PRODUCT_NAME = SessionLoginSample;
